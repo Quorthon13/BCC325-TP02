@@ -45,7 +45,7 @@ def ArvoreRegressao(X, y, profundidade, tam_teste, draw_graph):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=tam_teste)
 
     # Substituir o modelo de DecisionTreeRegressor por RandomForestRegressor
-    model = RandomForestRegressor(n_estimators=100, max_depth=profundidade, random_state=42)
+    model = RandomForestRegressor(n_estimators=100, max_depth=profundidade)
 
     # Treinando o modelo
     model.fit(X_train, y_train)
