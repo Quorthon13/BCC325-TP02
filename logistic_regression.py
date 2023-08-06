@@ -86,7 +86,7 @@ def RegressaoLogistica(X, y, tam_teste, draw_graph):
         ax1.scatter(range(len(comparison_df)), comparison_df['Valor Previsto'], label='Valor Previsto', alpha=0.7)
         ax1.set_xlabel('Amostras')
         ax1.set_ylabel(target_column)
-        ax1.set_title('Comparação entre Valor Real e Valor Previsto')
+        ax1.set_title('O imóvel possui área externa?')
         ax1.legend()
 
         # Generate the confusion matrix as a heatmap in the second subplot

@@ -73,11 +73,11 @@ def ArvoreRegressao(X, y, profundidade, tam_teste, draw_graph):
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
 
         # Gerando o gráfico de dispersão no primeiro subplot
-        ax1.scatter(range(len(comparison_df)), comparison_df['Valor Real'], label='Valor Real', alpha=0.7)
-        ax1.scatter(range(len(comparison_df)), comparison_df['Valor Predito'], label='Valor Predito', alpha=0.7)
+        ax1.scatter(range(len(comparison_df)), comparison_df['Valor Real'], label='Valor do Aluguel Real', alpha=0.7)
+        ax1.scatter(range(len(comparison_df)), comparison_df['Valor Predito'], label='Valor do Aluguel Predito', alpha=0.7)
         ax1.set_xlabel('Amostras')
         ax1.set_ylabel('Valor')
-        ax1.set_title('Comparação entre Valor Real e Valor Predito')
+        ax1.set_title('Comparação entre Valor do Aluguel Real e Valor do Aluguel Predito')
         ax1.legend()
 
         # Plot da Árvore de Regressão no segundo subplot

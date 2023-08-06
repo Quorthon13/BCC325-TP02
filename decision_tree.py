@@ -85,7 +85,7 @@ def ArvoreDecisao(X, y, profundidade, tam_teste, draw_graph):
         ax1.legend()
 
         # Plot da Árvore de Regressão no primeiro subplot
-        plot_tree(model, feature_names=list(X.columns), class_names=['Não', 'Sim'], filled=True, rounded=True, ax=ax2)
+        plot_tree(model, feature_names=list(X_train.columns), class_names=['Não', 'Sim'], filled=True, rounded=True, ax=ax2)
         ax2.set_title('Árvore de Decisão')
 
         plt.tight_layout()
