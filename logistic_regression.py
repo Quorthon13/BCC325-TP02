@@ -95,6 +95,7 @@ def RegressaoLogistica(X, y, tam_teste, draw_graph):
         ax2.set_ylabel('Valor Real')
         ax2.set_title('Matriz de Confusão')
 
+        fig.canvas.manager.set_window_title("Regressão Logística")
         plt.tight_layout()
         plt.show()
     return predicted_value, y_test

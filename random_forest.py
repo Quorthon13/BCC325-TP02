@@ -38,9 +38,7 @@ y = df[target_column]
 
 print('Número de colunas apõs One-Hot encoding:', df.columns.size)
 
-def ArvoreRegressao(X, y, profundidade, tam_teste, draw_graph):
-    #print("Arvore de regressão - profudidade: " + str(profundidade) + ", proporção dos testes: " + str(tam_teste * 100) +
-    #      "%, seed:" + str(seed))
+def RandomForest(X, y, profundidade, tam_teste, draw_graph):
     # Divide o conjunto em 2 partes: treino e teste
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=tam_teste)
 
@@ -93,6 +91,7 @@ def ArvoreRegressao(X, y, profundidade, tam_teste, draw_graph):
         ax2.set_xticklabels(feature_names[indices], rotation=90)
         ax2.set_title('Importância das Características')
 
+        fig.canvas.manager.set_window_title("Random Forest")
         plt.tight_layout()
         plt.show()
 
@@ -100,23 +99,23 @@ def ArvoreRegressao(X, y, profundidade, tam_teste, draw_graph):
 
 
 
-print('\n\nÁrvore de regressão com profundidade 1 e com 30% de proporção de teste', )
-mse, r2, predicted_value, y_test = ArvoreRegressao(X, y, profundidade=1, tam_teste=0.3, draw_graph=True)
+print('\n\nRandom Forest com profundidade 1 e com 30% de proporção de teste', )
+mse, r2, predicted_value, y_test = RandomForest(X, y, profundidade=1, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 2 e com 30% de proporção de teste', )
-mse, r2, predicted_value, y_test = ArvoreRegressao(X, y, profundidade=2, tam_teste=0.3, draw_graph=True)
+print('\n\nRandom Forest com profundidade 2 e com 30% de proporção de teste', )
+mse, r2, predicted_value, y_test = RandomForest(X, y, profundidade=2, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 5 e com 30% de proporção de teste', )
-mse, r2, predicted_value, y_test = ArvoreRegressao(X, y, profundidade=5, tam_teste=0.3, draw_graph=True)
+print('\n\nRandom Forest com profundidade 5 e com 30% de proporção de teste', )
+mse, r2, predicted_value, y_test = RandomForest(X, y, profundidade=5, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 10 e com 30% de proporção de teste', )
-mse, r2, predicted_value, y_test = ArvoreRegressao(X, y, profundidade=10, tam_teste=0.3, draw_graph=True)
+print('\n\nRandom Forest com profundidade 10 e com 30% de proporção de teste', )
+mse, r2, predicted_value, y_test = RandomForest(X, y, profundidade=10, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 20 e com 30% de proporção de teste', )
-mse, r2, predicted_value, y_test = ArvoreRegressao(X, y, profundidade=20, tam_teste=0.3, draw_graph=True)
+print('\n\nRandom Forest com profundidade 20 e com 30% de proporção de teste', )
+mse, r2, predicted_value, y_test = RandomForest(X, y, profundidade=20, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 50 e com 30% de proporção de teste', )
-mse, r2, predicted_value, y_test = ArvoreRegressao(X, y, profundidade=50, tam_teste=0.3, draw_graph=True)
+print('\n\nRandom Forest com profundidade 50 e com 30% de proporção de teste', )
+mse, r2, predicted_value, y_test = RandomForest(X, y, profundidade=50, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 100 e com 30% de proporção de teste', )
-mse, r2, predicted_value, y_test = ArvoreRegressao(X, y, profundidade=100, tam_teste=0.3, draw_graph=True)
+print('\n\nRandom Forest com profundidade 100 e com 30% de proporção de teste', )
+mse, r2, predicted_value, y_test = RandomForest(X, y, profundidade=100, tam_teste=0.3, draw_graph=True)
