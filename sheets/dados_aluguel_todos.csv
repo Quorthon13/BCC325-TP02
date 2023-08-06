@@ -1,0 +1,191 @@
+﻿Tipo;Bairro;Número de quartos ;Numero de banheiros;Garagem;Valor do Aluguel;Mobiliado;Área externa;Área de serviço
+Casa;Água Limpa;3;2;1;R$ 2.000,00;Não;Sim;Sim
+Casa;Água Limpa;2;1;0;R$ 1.100,00;Não;Não;Sim
+Casa;Água Limpa;4;3;1;R$ 2.800,00;Não;Sim;Sim
+Casa;Água Limpa;3;2;1;R$ 1.800,00;Não;Não;Sim
+Casa;Água Limpa;2;1;0;R$ 1.300,00;Não;Sim;Sim
+Casa;Água Limpa;2;1;0;R$ 1.000,00;Não;Não;Sim
+Casa;Água Limpa;3;1;0;R$ 1.500,00;Não;Sim;Sim
+Casa;Água Limpa;2;1;0;R$ 1.200,00;Não;Não;Sim
+Casa;Alto da Cruz;3;1;0;R$ 2.000,00;Não;Não;Sim
+Casa;Alto da Cruz;3;2;1;R$ 2.300,00;Não;Sim;Sim
+Casa;Alto da Cruz;4;3;1;R$ 3.000,00;Não;Sim;Sim
+Casa;Alto da Cruz;2;1;1;R$ 1.500,00;Não;Sim;Sim
+Casa;Alto da Cruz;2;1;0;R$ 1.000,00;Não;Não;Sim
+Casa;Alto da Cruz;2;1;0;R$ 8000,00;Não;Não;Sim
+Casa;Antonio Dias;4;2;1;R$ 5.000,00;Não;Sim;Não
+Casa;Antonio Dias;4;1;0;R$ 2.200,00;Não;Sim;Sim
+Casa;Antonio Dias;4;2;0;R$ 1.900,00;Não;Sim;Sim
+Casa;Antônio Dias;5;3;1;R$ 4.000,00;Não;Não;Sim
+Casa;Barra;2;1;0;R$ 1.600,00;Não;Sim;Sim
+Casa;Barra;3;2;1;R$ 2.800,00;Não;Sim;Sim
+Casa;Barra;2;1;0;R$ 1.400,00;Não;Não;Sim
+Casa;Barra;4;3;1;R$ 3.000,00;Não;Sim;Sim
+Casa;Barra;5;4;1;R$ 3.500,00;Não;Sim;Sim
+Casa;Barra;3;1;0;R$ 1.800,00;Não;Sim;Sim
+Casa;Barra;6;3;1;R$ 4.000,00;Não;Sim;Sim
+Casa;Bauxita;6;4;1;R$ 6.500,00;Não;Sim;Sim
+Casa;Bauxita;3;2;0;R$ 2.000,00;Não;Não;Sim
+Casa;Bauxita;3;3;1;R$ 3.000,00;Não;Sim;Sim
+Casa;Bauxita;4;3;1;R$ 6.000,00;Não;Sim;Sim
+Casa;Bauxita;1;1;0;R$ 1.100,00;Não;Sim;Sim
+Casa;Bauxita;5;4;1;R$ 3.000,00;Não;Sim;Sim
+Casa;Cabeças;2;1;0;R$ 1.500,00;Não;Sim;Sim
+Casa;Cabeças;8;8;1;R$ 8.000,00;Não;Não;Sim
+Casa;Cabeças;7;8;1;R$ 10.000,00;Sim;Sim;Sim
+Casa;Centro;2;1;0;R$ 2.300,00;Não;Sim;Sim
+Casa;Centro;4;1;0;R$ 1.990,00;Não;Sim;Sim
+Casa;Centro;1;1;1;R$ 1.800,00;Não;Sim;Sim
+Casa;Centro;2;3;0;R$ 4.500,00;Não;Sim;Sim
+Casa;Centro;3;3;2;R$ 3.000,00;Sim;Sim;Sim
+Casa;Centro;2;1;0;R$ 2.300,00;Não;Sim;Sim
+Casa;Jardim Alvorada;6;3;1;R$ 6.000,00;Não;Sim;Sim
+Casa;Jardim Alvorada;3;1;0;R$ 2.000,00;Não;Sim;Sim
+Casa;Jardim Alvorada;2;2;1;R$ 1.500,00;Sim;Não;Sim
+Casa;Morro Santana;3;1;1;R$ 1.800,00;Não;Sim;Sim
+Casa;Morro Santana;3;1;0;R$ 1.000,00;Não;Não;Sim
+Casa;Morro Santana;3;1;0;R$ 1.000,00;Sim;Não;Sim
+Casa;Morro Santana;2;1;1;R$ 900,00;Não;Não;Sim
+Casa;Morro Santana;3;2;1;R$ 1.400,00;Não;Sim;Sim
+Casa;Pocinho;1;1;0;R$ 600;Não;Não;Sim
+Casa;Pocinho;3;1;0;R$ 1.150,00;Não;Não;Sim
+Casa;Pocinho;2;1;0;R$ 800;Não;Não;Sim
+Casa;Pocinho;3;1;0;R$ 1.350,00;Não;Não;Sim
+Casa;Pocinho;1;1;1;R$ 700;Não;Não;Sim
+Casa;Rosario;3;2;1;R$ 1.800,00;Não;Sim;Sim
+Casa;Rosario;7;2;0;R$ 3.500,00;Não;Não;Sim
+Casa;Rosario;3;2;0;R$ 1.500,00;Não;Não;Sim
+Casa;Rosario;2;1;1;R$ 2.000,00;Não;Não;Sim
+Casa;Rosário;2;1;0;R$ 1.800;Não;Não;Sim
+Casa;São Cristovão;2;1;1;R$ 1.000,00;Não;Não ;Sim
+Casa;São Cristovão;2;2;0;R$ 1.000,00;Não;Não;Sim
+Casa;São Cristovão;4;2;1;R$ 1.800,00;Não;Não;Sim
+Casa;São Cristovão;3;1;1;R$ 950,00;Não;Não;Sim
+Casa;São Cristovão;3;1;0;R$ 1.500,00;Não;Sim;Sim
+Casa;Saramenha;2;1;0;R$ 1.200,00;Não;Sim;Sim
+Casa;Saramenha;2;1;1;R$ 1.200,00;Não;Não;Sim
+Casa;Saramenha;2;1;1;R$ 1.300,00;Não;Sim;Sim
+Casa;Saramenha;4;3;1;R$ 3.800,00;Não;Sim;Sim
+Casa;Saramenha;1;1;0;R$ 1.000,00;Não;Não;Não
+Casa;Vila Aparecida;3;1;0;R$ 1.400,00;Não;Não;Sim
+Casa;Vila Aparecida;3;1;0;R$ 1.500;Não;Sim;Sim
+Casa;Vila Aparecida;3;1;0;R$ 1.450,00;Não;Sim;Sim
+Casa;Vila Aparecida;1;1;1;R$ 1.100,00;Não;Não;Sim
+Casa;Vila Aparecida;2;2;0;R$ 1.300;Sim;Sim;Sim
+Apartamento;Barra;1;1;0;R$ 1.150,00;Sim;Não;Não
+Apartamento;Barra;1;1;0;R$ 900,00;Não;Não;Não
+Apartamento;Barra;2;1;0;R$ 1.200,00;Não;Não;Sim
+Apartamento;Barra;2;1;1;R$ 1.400,00;Sim;Sim;Sim
+Apartamento;Barra;1;1;0;R$ 1.100,00;Sim;Sim;Não
+Apartamento;Barra;1;1;1;R$ 1.300,00;Não;Não;Sim
+Apartamento;Barra;1;1;0;R$ 1.000,00;Não;Não;Sim
+Apartamento;Barra;1;1;0;R$ 1.200,00;Não;Não;Sim
+Apartamento;Bauxita;3;2;1;R$ 1.900;Sim;Não;Sim
+Apartamento;Bauxita;1;1;0;R$ 1.400;Não;Não;Não
+Apartamento;Bauxita;3;2;1;R$ 3.300;Não;Não;Sim
+Apartamento;Bauxita;3;2;1;R$ 3.300,00;Não;Não;Sim
+Apartamento;Bauxita;3;1;1;R$ 3.500,00;Não;Sim;Sim
+Apartamento;Bauxita;1;1;0;R$ 1.750,00;Não;Não;Sim
+Apartamento;Bauxita;1;1;0;R$ 800,00;Não;Não;Sim
+Apartamento;Bauxita;1;1;0;R$ 1800,00;Não;Sim;Não
+Apartamento;Bauxita;3;1;0;R$ 1400,00;Não;Não;Sim
+Apartamento;Bauxita;2;1;1;R$ 1.300,00;Não;Não;Não
+Apartamento;Bauxita;3;1;0;R$ 2.300,00;Não;Sim;Sim
+Apartamento;Bauxita - prox UFOP;2;1;0;R$ 2.750,00;Sim;Não;Sim
+Apartamento;Centro;1;1;0;R$ 1.500,00;Não;Não;Não
+Apartamento;Centro;2;1;0;R$ 1.700,00;Não;Não;Sim
+Apartamento;Centro;3;2;0;R$ 2.100,00;Sim;Não;Sim
+Apartamento;Centro;1;1;0;R$ 1550,00;Sim;Não;Não
+Apartamento;Centro;1;1;0;R$ 1.500,00;Não;Não;Não
+Apartamento;Centro;1;1;0;R$ 1.600,00;Não;Não;Não
+Apartamento;Centro;1;1;0;R$ 1.600,00;Não;Não;Sim
+Apartamento;Centro;2;1;0;R$ 1.650,00;Não;Não;Não
+Apartamento;Centro;2;1;0;R$ 1.700,00;Não;Sim;Não
+Apartamento;Centro;1;1;0;R$ 1.500,00;Não;Não;Não
+Apartamento;Centro;3;2;1;R$ 2.400,00;Sim;Sim;Sim
+Apartamento;Centro;1;1;0;R$ 1.700,00;Não;Não;Sim
+Apartamento;Jardim Alvorada;2;1;0;R$ 1.250,00;Não;Não;Sim
+Apartamento;Jardim Alvorada;3;2;1;R$ 1.800,00;Não;Não;Sim
+Apartamento;Jardim Alvorada;2;2;1;R$ 1.800,00;Não;Não;Sim
+Apartamento;Jardim Alvorada;1;1;1;R$ 1.350,00;Não;Não;Sim
+Apartamento;Jardim Alvorada;2;2;0;R$ 1.500,00;Não;Não;Sim
+Apartamento;Lagoa;1;1;1;R$ 1.200,00;Não;Não;Sim
+Apartamento;Lagoa;2;1;1;R$ 1.600,00;Não;Não;Sim
+Apartamento;Lagoa;2;1;2; R$2.000,00;Não;Não;Sim
+Apartamento;Lagoa;1;1;0;R$ 1.020,00;Não;Não;Sim
+Apartamento;Lagoa;2;1;1;R$ 2.000,00;Não;Não;Sim
+Apartamento;Morro Santana;3;1;1;R$ 1.200,00;Não;Não;Sim
+Apartamento;Morro Santana;3;1;1;R$ 1.100,00;Não;Não;Sim
+Apartamento;Morro São João ;2;1;0;R$ 1.000,00;Não;Não;Sim
+Apartamento;Morro São João ;4;2;1;R$ 1.500,00;Não;Sim;Sim
+Apartamento;Pilar;2;1;0;R$ 900,00;Não;Não;Sim
+Apartamento;Pilar;2;1;0;R$ 900,00;Não;Não;Sim
+Apartamento;Pilar;2;1;1;R$ 1100,00;Sim;Não;Sim
+Apartamento;Pilar;1;1;0;R$ 850,00;Não;Não;Não
+Apartamento;Pilar;1;1;0;R$ 750,00;Não;Não;Não
+Apartamento;Pilar;1;1;0;R$ 900,00;Não;Não;Não
+Apartamento;Pilar;1;1;0;R$ 800,00;Não;Não;Não
+Apartamento;São Cristovão;2;1;1;R$ 2.100,00;Não;Não;Sim
+Apartamento;São Cristovão;2;1;0;R$ 2.000,00;Não;Não;Sim
+Apartamento;São Cristovão;1;1;1;R$ 1.900,00;Não;Não;Sim
+Apartamento;São Cristovão;1;1;0;R$ 1.800,00;Não;Sim;Sim
+Apartamento;São Cristovão;1;1;0;R$ 2.000,00;Sim;Não;Sim
+Apartamento;Saramenha;2;1;0;R$ 1900,00;Não;Não;Sim
+Apartamento;Saramenha;2;1;1;R$ 1.900,00;Não;Sim;Sim
+Apartamento;Saramenha;2;1;0;R$ 1.600,00;Não;Sim;Sim
+Apartamento;Saramenha;3;1;1;R$ 2.100,00;Não;Não;Sim
+Apartamento;Saramenha;2;2;1;R$ 2.200,00;Sim;Não;Não
+Apartamento;Saramenha;2;2;0;R$ 1.950,00;Não;Não;Sim
+Apartamento;Saramenha;1;2;0;R$ 1.700,00;Não;Não;Sim
+Apartamento;Saramenha;1;1;0;R$ 1.650,00;Não;Não;Sim
+Apartamento;Saramenha;1;1;0;R$ 1.600,00;Sim;Não;Não
+Apartamento;Vila dos Engenheiros;2;1;0;R$ 1.700,00;Não;Não;Sim
+Apartamento;Vila dos Engenheiros;2;1;1;R$ 2.000,00;Não;Não;Sim
+Apartamento;Vila dos Engenheiros;1;1;0;R$ 1700,00;Sim;Sim;Não
+Apartamento;Vila dos Engenheiros;2;1;1;R$ 2.100,00;Não;Não;Sim
+Apartamento;Vila dos Engenheiros;1;2;0;R$ 1900,00;Sim;Não;Sim
+Kitnet;Alto Da Cruz;1;1;0;R$ 500,00;Não;Não;Sim
+Kitnet;Alto Da Cruz;1;1;0;R$ 400,00;Não;Não;Sim
+Kitnet;Alto Da Cruz;1;1;0;R$ 450,00;Não;Não;Sim
+Kitnet;Alto Da Cruz;1;1;0;R$ 350,00;Não;Não;Não
+Kitnet;Alto Das Dores;1;1;0;R$ 650,00;Não;Não;Sim
+Kitnet;Alto Das Dores;1;1;0;R$ 700,00;Não;Não;Sim
+Kitnet;Alto Das Dores;1;1;0;R$ 680,00;Não;Não;Sim
+Kitnet;Alto Das Dores;1;1;0;R$ 800,00;Não;Não;Sim
+Kitnet;Alto Das Dores;1;1;0;R$ 780,00;Não;Não;Sim
+Kitnet;Antonio Dias;1;1;0;R$ 500,00;Não;Não;Não
+Kitnet;Antonio Dias;1;1;0;R$ 600,00;Não;Não;Sim
+Kitnet;Antonio Dias;1;1;0;R$ 550,00;Não;Não;Não
+Kitnet;Antonio Dias;1;1;0;R$ 650,00;Não;Não;Sim
+Kitnet;Antonio Dias;1;1;0;R$ 700,00;Não;Sim;Sim
+Kitnet;Antonio Dias;1;1;0;R$ 550,00;Não;Não;Sim
+Kitnet;Boa Esperança;1;1;0;R$ 600,00;Não;Não;Sim
+Kitnet;Boa Esperança;1;1;0;R$ 750,00;Não;Não;Sim
+Kitnet;Boa Esperança;1;1;0;R$ 650,00;Não;Não;Sim
+Kitnet;Boa Esperança;1;1;0;R$ 600,00;Não;Não;Não
+Kitnet;Boa Esperança;1;1;0;R$ 700,00;Não;Não;Sim
+Kitnet;Jardim Itacolomi;1;1;0;R$ 640,00;Não;Não;Não
+Kitnet;Jardim Itacolomi;1;1;0;R$ 680,00;Não;Não;Sim
+Kitnet;Jardim Itacolomi;1;1;0;R$ 600,00;Não;Não;Não
+Kitnet;Jardim Itacolomi;1;1;0;R$ 650,00;Não;Não;Não
+Kitnet;Jardim Itacolomi;1;1;0;R$ 650,00;Não;Não;Sim
+Kitnet;Saramenha;1;1;0;R$ 800,00;Não;Não;Não
+Kitnet;Saramenha;1;1;0;R$ 600,00;Não;Não;Não
+Kitnet;Saramenha;1;1;0;R$ 600,00;Não;Não;Sim
+Kitnet;Saramenha;1;1;0;R$ 600,00;Não;Não;Não
+Kitnet;Saramenha;1;1;0;R$ 600,00;Não;Não;Sim
+Kitnet;Tavares;1;1;0;R$ 780,00;Não;Não;Sim
+Kitnet;Tavares;1;1;0;R$ 680,00;Não;Não;Não
+Kitnet;Tavares;1;1;0;R$ 600,00;Não;Não;Não
+Kitnet;Tavares;1;1;0;R$ 800,00;Não;Não;Não
+Kitnet;Tavares;1;1;0;R$ 700,00;Não;Não;Sim
+Kitnet;Vila Itacolomi;1;1;0;R$ 650,00;Não;Não;Não
+Kitnet;Vila Itacolomi;1;1;0;R$ 560,00;Não;Não;Não
+Kitnet;Vila Itacolomi;1;1;0;R$ 700,00;Não;Não;Sim
+Kitnet;Vila Itacolomi;1;1;0;R$ 670,00;Não;Não;Não
+Kitnet;Vila Itacolomi;1;1;0;R$ 600,00;Não;Não;Não
+Kitnet;Vila São José;1;1;0;R$ 600,00;Não;Não;Não
+Kitnet;Vila São José;1;1;0;R$ 550,00;Não;Não;Sim
+Kitnet;Vila São José;1;1;0;R$ 650,00;Não;Não;Não
+Kitnet;Vila São José;1;1;0;R$ 680,00;Não;Não;Sim
+Kitnet;Vila São José;1;1;0;R$ 500,00;Não;Não;Não
