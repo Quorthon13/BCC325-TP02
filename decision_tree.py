@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier, plot_tree # Import Decision Tree Classifier
-from sklearn.model_selection import train_test_split # Import train_test_split function
+from sklearn.model_selection import train_test_split, cross_val_score # Import train_test_split function
 from sklearn.metrics import accuracy_score, f1_score
 import matplotlib.pyplot as plt
 
@@ -34,9 +34,8 @@ target_column = 'Área externa'
 X = df.drop(target_column, axis=1)
 y = df[target_column]
 
-print('Número de colunas apõs One-Hot encoding:', df.columns.size)
 
-def ArvoreRegressao(X, y, profundidade, tam_teste, draw_graph):
+def ArvoreDecisao(X, y, profundidade, tam_teste, draw_graph):
     #print("Arvore de regressão - profudidade: " + str(profundidade) + ", proporção dos testes: " + str(tam_teste * 100) +
     #      "%, seed:" + str(seed))
     # Divide o conjunto em 2 partes: treino e teste
@@ -53,45 +52,59 @@ def ArvoreRegressao(X, y, profundidade, tam_teste, draw_graph):
     score = accuracy_score(y_test.ravel(), predicted_value) * 100
     measure = f1_score(y_test, predicted_value, average='weighted') * 100
     print('Acurácia:', score);
-    print('Measure:', measure)
+    print('Medida F1:', measure)
+
+    # Realiza a Validação Cruzada para acurácia média
+    scores = cross_val_score(model, X, y, cv=5)  # cv=5 para validação cruzada com 5 folds
+    print('Acurácia média da Validação Cruzada:', scores.mean() * 100)
+    print('Desempenho em cada fold:', [score1 * 100 for score1 in scores])
+
+    # Realiza a Validação Cruzada e obtém os F1 Scores em cada fold
+    scores = cross_val_score(model, X, y, cv=5, scoring='f1_weighted')
+    print('\Medida F1 Score médio da Validação Cruzada:', scores.mean() * 100)
+    print('Desempenho em cada fold:', [score1 * 100 for score1 in scores])
+
 
     if draw_graph:
-        # Visualizando a árvore de decisão
-        plt.figure(figsize=(15, 10))
-        plot_tree(model, feature_names=list(X.columns), class_names=['Não', 'Sim'], filled=True, rounded=True)
-        plt.show()
+        # Criando uma figura com dois subplots
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 8))
+
         # Criando um DataFrame para comparar os valores reais com os preditos
         comparison_df = pd.DataFrame({'Valor Real': y_test, 'Valor Predito': predicted_value})
 
         # Ordenando o DataFrame para melhor visualização
         comparison_df.sort_values(by='Valor Real', inplace=True)
-        # Mapeando os valores numéricos para "Não" e "Sim"
         comparison_df['Valor Real'] = comparison_df['Valor Real'].map({0: 'Não', 1: 'Sim'})
         comparison_df['Valor Predito'] = comparison_df['Valor Predito'].map({0: 'Não', 1: 'Sim'})
-        # Gerando o gráfico de dispersão
-        plt.scatter(range(len(comparison_df)), comparison_df['Valor Real'], label='Valor Real', alpha=0.7)
-        plt.scatter(range(len(comparison_df)), comparison_df['Valor Predito'], label='Valor Predito', alpha=0.7)
+        # Gerando o gráfico de dispersão no segundo subplot
+        ax1.scatter(range(len(comparison_df)), comparison_df['Valor Real'], label='Valor Real', alpha=0.7)
+        ax1.scatter(range(len(comparison_df)), comparison_df['Valor Predito'], label='Valor Predito', alpha=0.7)
+        ax1.set_xlabel('Amostras')
+        ax1.set_ylabel(target_column)
+        ax1.set_title('O imóvel possui área externa?')
+        ax1.legend()
 
-        plt.xlabel('Amostras')
-        plt.ylabel(target_column)
-        plt.title('O imóvel possui área externa?')
-        plt.legend()
+        # Plot da Árvore de Regressão no primeiro subplot
+        plot_tree(model, feature_names=list(X.columns), class_names=['Não', 'Sim'], filled=True, rounded=True, ax=ax2)
+        ax2.set_title('Árvore de Decisão')
+
+        plt.tight_layout()
         plt.show()
 
     return predicted_value, y_test
 
 
-print('\n\nÁrvore de regressão com profundidade 1 e com 30% de proporção de teste' )
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=1, tam_teste=0.3, draw_graph=True)
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=1, tam_teste=0.3, draw_graph=False)
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=1, tam_teste=0.3, draw_graph=False)
+print('\n\nÁrvore de decisão com profundidade 1 e com 30% de proporção de teste' )
+predicted_value, y_test = ArvoreDecisao(X, y, profundidade=1, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 2 e com 30% de proporção de teste' )
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=2, tam_teste=0.3, draw_graph=True)
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=2, tam_teste=0.3, draw_graph=False)
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=2, tam_teste=0.3, draw_graph=False)
+print('\n\nÁrvore de decisão com profundidade 2 e com 30% de proporção de teste' )
+predicted_value, y_test = ArvoreDecisao(X, y, profundidade=2, tam_teste=0.3, draw_graph=True)
 
-print('\n\nÁrvore de regressão com profundidade 5 e com 30% de proporção de teste')
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=5, tam_teste=0.3, draw_graph=True)
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=5, tam_teste=0.3, draw_graph=False)
-predicted_value, y_test = ArvoreRegressao(X, y, profundidade=5, tam_teste=0.3, draw_graph=False)
+print('\n\nÁrvore de decisão com profundidade 5 e com 30% de proporção de teste')
+predicted_value, y_test = ArvoreDecisao(X, y, profundidade=5, tam_teste=0.3, draw_graph=True)
+
+print('\n\nÁrvore de decisão com profundidade 10 e com 30% de proporção de teste')
+predicted_value, y_test = ArvoreDecisao(X, y, profundidade=10, tam_teste=0.3, draw_graph=True)
+
+print('\n\nÁrvore de decisão com profundidade 20 e com 30% de proporção de teste')
+predicted_value, y_test = ArvoreDecisao(X, y, profundidade=20, tam_teste=0.3, draw_graph=True)
